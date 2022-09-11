@@ -12,6 +12,7 @@ public class Main {
             System.out.println("1. Добавить");
             System.out.println("2. Показать");
             System.out.println("3. Удалить");
+            System.out.println("4. Найти продукт");
 
             String input = "";
             int operationStr = 0;
@@ -77,6 +78,7 @@ public class Main {
         for (int i = 0; i < listProducts.size(); i++) {
             if (listProducts.get(i).toLowerCase().contains(product.toLowerCase())) {
                 System.out.println(listProducts.get(i));
+                countMatches++;
             }
         }
         if (countMatches == 0) {
